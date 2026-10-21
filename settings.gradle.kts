@@ -17,8 +17,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal {
+            content { includeGroup("com.github.berkchy.quackjs") }
+        }
         maven("https://jitpack.io") {
-            content { includeGroup("com.github.MetrolistGroup.quackjs") }
+            content { includeGroup("com.github.berkchy.quackjs") }
         }
     }
 }
